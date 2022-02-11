@@ -1,4 +1,4 @@
-# acs-adhoc-calling-sample
+# acs-adhoc-chat-sample
 
 Quick sample demoing acs adhoc chat to one or several Teams users
 
