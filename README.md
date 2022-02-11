@@ -1,6 +1,6 @@
 # acs-adhoc-calling-sample
 
-Quick sample demoing acs adhoc chat to one or sevelra Teams users
+Quick sample demoing acs adhoc chat to one or several Teams users
 
 ## Setup
 
