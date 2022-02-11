@@ -1,0 +1,10 @@
+{
+  "name": "asc-adhoc-calling-sample",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no tests\" && exit 1",
+    "setup": "cd server && npm install && cd ../app && npm install && cd ..",
+    "start": "cd app && npm run start && cd ..",
+    "build": "cd server && npm run build && cd ../app && npm run build && cd .."
+  }
+}
