@@ -12,11 +12,10 @@ npm run setup
 
 ## Run Locally
 
-In one terminal window, start the server:
+1. Change add your connection string in server/appsettings.json
+2. In one terminal window, start the server:
 
 ```sh
-# Set environment variables
-$env:ResourceConnectionString='<connection string>' # <-- powershell, differs per environment
 
 # Navigate to server dir
 cd server
