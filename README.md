@@ -1,6 +1,6 @@
-# acs-adhoc-calling-sample
+# acs-adhoc-chat-sample
 
-Quick sample demoing acs adhoc calling to a Teams user
+Quick sample demoing acs adhoc chat to one or several Teams users
 
 ## Setup
 
@@ -12,7 +12,7 @@ npm run setup
 
 ## Run Locally
 
-1. Change add your connection string in server/appsettings.json
+1. Add your connection string in server/appsettings.json
 2. In one terminal window, start the server:
 
 ```sh
