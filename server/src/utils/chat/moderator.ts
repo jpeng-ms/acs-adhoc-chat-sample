@@ -4,7 +4,7 @@
 import { AzureCommunicationTokenCredential } from '@azure/communication-common';
 import { ChatClient, CreateChatThreadOptions, CreateChatThreadRequest } from '@azure/communication-chat';
 import { getEnvUrl } from '../envHelper';
-import { GUID_FOR_INITIAL_TOPIC_NAME } from '../constants';
+import { INITIAL_TOPIC_NAME } from '../constants';
 import { threadIdToModeratorCredentialMap } from './threadIdToModeratorTokenMap';
 import { createUser, getToken } from '../identityClient';
 
@@ -18,7 +18,7 @@ export const createThread = async (topicName?: string): Promise<string> => {
   const chatClient = new ChatClient(getEnvUrl(), credential);
 
   const request: CreateChatThreadRequest = {
-    topic: topicName ?? GUID_FOR_INITIAL_TOPIC_NAME
+    topic: topicName ?? INITIAL_TOPIC_NAME
   };
   const options: CreateChatThreadOptions = {
     participants: [
