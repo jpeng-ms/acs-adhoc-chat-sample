@@ -4,6 +4,8 @@ Quick sample demoing acs adhoc chat to one or several Teams users
 
 ## Setup
 
+Install node.js (13 or newer): https://nodejs.org/en/download/
+
 Install dependencies
 
 ```sh
@@ -29,6 +31,12 @@ In another, start the app:
 ```sh
 cd app
 npm run start
+```
+
+If the app doesn't start up, you may need to fix the package versions and re-start the app:
+
+```sh
+npm audit fix --force
 ```
 
 ## Deploy to Azure Web Apps
