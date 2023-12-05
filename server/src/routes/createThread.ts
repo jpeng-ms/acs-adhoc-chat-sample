@@ -7,7 +7,7 @@ import { createThread } from '../utils/chat/moderator';
 const router = express.Router();
 
 router.post('/', async function (req, res, next) {
-  res.send(await createThread());
+  return res.send(await createThread(req, "Group Chat"));
 });
 
 export default router;

@@ -32,13 +32,16 @@ export const ChatPage = (props: CallPageProps): JSX.Element => {
   useEffect(() => {
     (async () => {
       console.log(`Chat teams MRIs: ${teamsUserMRIs ?? 'undefined'}`);
-      
-      const threadId = getThreadId() || await createThread();
+      var payload = {
+        "token": token,
+        "userId": userId,
+      }
+      const threadId = getThreadId() || await createThread(payload);
       const teamsUserMriList = teamsUserMRIs?.split(',') ?? [];
       const teamsUserNameList = teamsMemberNames?.split(',') ?? [];
       console.log(teamsUserNameList);
 
-      await joinThread(threadId, userId.communicationUserId, displayName);
+      // await joinThread(threadId, userId.communicationUserId, displayName);
 
       teamsUserMriList.forEach((mri, index) => {
         joinThread(threadId, mri.trim(), teamsUserNameList[index]?.trim() ?? 'No Name', true);
